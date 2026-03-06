@@ -54,6 +54,7 @@ chmod +x install.sh
 | `roslynpad` | RoslynPad |
 | `flutter` | Flutter SDK |
 | `supabase-bin` | Supabase CLI |
+| `filen-desktop-bin` | Filen |
 | `mcontrolcenter-bin` | MControlCenter |
 
 ## Notes
@@ -65,6 +66,7 @@ chmod +x install.sh
   ```
 - **Flutter** — run `flutter doctor` after install to verify the setup
 - **RoslynPad** — requires `.NET SDK`, already included
+- **Filen** — E2E encrypted cloud storage, 10GB free tier. Based in Germany.
 
 ## Machine
 
