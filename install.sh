@@ -79,6 +79,14 @@ AUR_PACKAGES=(
 info "Installing AUR packages..."
 paru -S --needed --noconfirm "${AUR_PACKAGES[@]}"
 
+# ── VS Code Extensions ───────────────────────────────────────
+if [ -f "$(dirname "$0")/extensions.txt" ]; then
+  info "Installing VS Code extensions..."
+  cat "$(dirname "$0")/extensions.txt" | xargs -L 1 code --install-extension
+else
+  warn "extensions.txt not found, skipping VS Code extensions."
+fi
+
 # ── Docker post-install ──────────────────────────────────────
 info "Enabling Docker service and adding user to docker group..."
 sudo systemctl enable --now docker
