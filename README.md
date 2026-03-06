@@ -65,8 +65,17 @@ chmod +x install.sh
   cat /sys/devices/platform/msi-ec/shift_mode
   ```
 - **Flutter** — run `flutter doctor` after install to verify the setup
+- **GitHub Desktop** — if you get keyring errors on KDE, make sure KWallet is unlocked on login via System Settings → KWallet
 - **RoslynPad** — requires `.NET SDK`, already included
 - **Filen** — E2E encrypted cloud storage, 10GB free tier. Based in Germany.
+- **auto-cpufreq** — automatically manages CPU frequency for better battery life
+- **envycontrol** — switch between iGPU only, hybrid, or dedicated GPU:
+
+  ```bash
+  sudo envycontrol -s integrated   # best battery life
+  sudo envycontrol -s hybrid       # balanced (default)
+  sudo envycontrol -s dedicated    # full GPU power
+  ```
 
 ## Machine
 
